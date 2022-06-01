@@ -8,7 +8,7 @@ bot = commands.Bot(command_prefix=['?'], intents=discord.Intents.all())
 @bot.event
 async def on_ready():
   print('로딩완료')
-  await bot.change_presence(activity=discord.Game("/docs"))
+  await bot.change_presence(activity=discord.Game("블랙리스트 유저 확인중"))
 
 @bot.event
 async def on_member_join(member):
